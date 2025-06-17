@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Today's Schedule</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+  <main id="main">
+    <h1>Today's Schedule</h1>
+    <form id="task-form" autocomplete="off">
+      <input type="text" id="task-input" placeholder="Add new task..." required maxlength="120" />
+      <input type="time" id="time-input" title="Task Time" />
+      <button type="submit" aria-label="Add Task" title="Add Task">+</button>
+    </form>
+    <ul id="task-list"></ul>
+  </main>
+  <script src="newtab.js"></script>
+</body>
+</html>
