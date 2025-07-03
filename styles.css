@@ -241,6 +241,51 @@ h1 {
   z-index: 99999;
   animation: confetti-fall 1.2s cubic-bezier(.39,.575,.565,1) forwards;
 }
+
+/* Priority Button Styling */
+#task-list li .priority {
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 6px;
+  margin-left: 8px;
+  cursor: pointer;
+  color: #333;
+  transition: background 0.3s, transform 0.2s;
+}
+#task-list li .priority:hover {
+  transform: scale(1.05);
+}
+
+/* Checkmark Button (✅) */
+#task-list li .checkmark {
+  font-size: 1.2em;
+  margin-right: 12px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s;
+}
+#task-list li .checkmark:hover {
+  transform: scale(1.2);
+}
+
+/* Delete Button (🗑️) */
+#task-list li .delete {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  margin-left: 8px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: color 0.2s, transform 0.2s;
+}
+#task-list li .delete:hover {
+  color: #e63946;
+  transform: scale(1.2);
+  opacity: 1;
+}
+
 @keyframes confetti-fall {
   0% { transform: translateY(-30px) rotate(-18deg);}
   80% { opacity: 1;}
